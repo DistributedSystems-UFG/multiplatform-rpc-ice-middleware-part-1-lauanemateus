@@ -15,4 +15,7 @@ print(rep)
 rep = printer2.printString("Hello World from printer2!")
 print(rep)
 
+print(printer1.toUpper("Hello World from printer1!"))
+print(printer2.countChars("Hello World from printer2!"))
+
 communicator.waitForShutdown()

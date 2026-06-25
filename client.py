@@ -9,3 +9,5 @@ if not printer:
     raise RuntimeError("Invalid proxy")
 
 printer.printString("Hello World!")
+print(printer.toUpper("Hello World!"))
+print(printer.countChars("Hello World!"))

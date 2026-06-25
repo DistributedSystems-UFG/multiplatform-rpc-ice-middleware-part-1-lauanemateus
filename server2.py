@@ -9,6 +9,12 @@ class PrinterI(Demo.Printer):
         print(self.t, s)
         return s + "*"
 
+    def toUpper(self, s, current=None):
+        return s.upper()
+
+    def countChars(self, s, current=None):
+        return len(s)
+
 communicator = Ice.initialize(sys.argv) 
 
 adapter = communicator.createObjectAdapterWithEndpoints("SimpleAdapter", "default -p 5678")
